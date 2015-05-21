@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="Interval.js"></script>-->
+    <script src="breakImage.js"></script>
+
+</head>
+
+<body>
+
+<div class="container" style="width:960px;margin: 0 auto;position: relative">
+    <img src="ele2.jpg" alt="Ele"  width="300" class="br" />
+</div>
+
+<script>
+	
+
+$(document).ready(function () {
+
+var options;
+options = {
+    timeX: 10, /*Time of image*/
+    img: '.br', /*Image Selecto could be ID or a CLass*/
+    type: 'sin', /*Time : line, up,down,sin*/
+    gutter: 5, /* space between slices */
+    position: 'none', /*Float: Right, Left or none*/
+    factor: 3 /*Facto of separation in the top and bottom*/
+};
+
+    var x = new BreakImage(options);
+
+});
+</script>
+
+
+
+</body>
+
+</html>
+
+
